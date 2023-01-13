@@ -711,7 +711,7 @@ main {
   color: #1B1C21;
 }
 .prices__offer a::after {
-  content: url(/src/icons/arrow_right_pink.svg);
+  content: url(../icons/arrow_right_pink.svg);
   margin-left: 10px;
 }
 
