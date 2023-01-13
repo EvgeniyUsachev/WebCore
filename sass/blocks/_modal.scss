@@ -1,0 +1,96 @@
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color:rgba(255,255,255,0.95);
+    position: absolute;
+    right: -100%;
+    z-index: 100;
+    transition: 0.6s;
+    top: 0;
+    &--open {
+        position: fixed;
+        right:0; 
+        height: 100vh;
+        }
+}
+
+.modal {
+    position: absolute;
+    right: 0;
+    width: 320px;
+    background-color: #FFF;
+    padding: 24px 16px 24px 16px;
+    height: 100%;
+    z-index: 1000;
+    overflow: auto;
+
+
+    
+    .send-button {
+        display: block;
+        margin: 0 0 0 auto;
+        width: 136px;
+        height: 32px;
+        img {
+            margin-left: 12px;
+        }
+    }
+    
+    &__close {
+        margin-bottom: 40px;
+        &--440 {
+            display: none;
+        }
+    }
+    &__header {
+        &:nth-child(2) {
+            margin-left: -16px;
+            margin-bottom: 24px;    
+        }
+        p {
+            font-size: 24px;
+            letter-spacing: -0.6px;
+            font-weight: 800;
+            font-size: 28px;
+            margin: 0;
+            color: $main-text-color;
+        }
+       
+    }
+    &__confidential {
+        margin-top: 16px;
+        color:$grey;
+        font-size: 14px;
+        font-weight: 500;
+        span {
+            color:$pink;
+        }
+    }
+   
+    input, textarea {
+        width: 288px;
+        height: 48px;
+        border: solid 1px $light-grey;
+        border-radius: 8px;
+        padding: 0 16px;
+        margin-bottom: 16px;
+        &::placeholder {
+            font-size: 16px;
+            letter-spacing: -0.2px;
+            color: #B5B6BC;
+            font-weight: 500;
+        }
+    }
+    textarea {
+        height: 118px;
+        margin-bottom: 0px;
+        padding-top:10px;
+    }
+}
+
+
+.myClass {
+    p {
+        font-weight: 900;
+    }
+}

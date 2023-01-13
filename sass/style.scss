@@ -1,0 +1,53 @@
+
+@import url(../css/fonts.css);
+@import 'base/variables'; 
+
+* {
+    box-sizing: border-box; 
+    font-family: 'TT Lakes';
+}
+
+body {
+    background-color: #F8F8F8;  
+    position: relative;
+    overflow-x: hidden;
+
+}
+.body--fixed {
+    position: fixed;
+}
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+   
+}
+
+.flex-wrapper {
+    display: flex;
+    max-width: 1440px;
+    flex-direction: column;
+   
+}
+.container {
+    max-width: 1120px;
+}
+
+@import 'blocks/burger' ;
+@import 'blocks/menu' ;
+@import 'blocks/services' ;
+@import 'blocks/show-more' ;
+@import 'blocks/menu-button' ;
+@import 'blocks/burger-menu' ;
+@import 'blocks/brands' ;
+@import 'blocks/types' ;
+@import 'blocks/prices' ;
+@import 'blocks/order-button' ;
+@import 'blocks/footer' ;
+@import 'blocks/modal' ;
+
+
+
+
+
+@import 'base/media'; 
