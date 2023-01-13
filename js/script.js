@@ -83,22 +83,36 @@ for (i = 0; i < showBrands.length; i++) {
 
 const menu = document.querySelector('.burger-menu'),
       burgerBtn = document.querySelectorAll('.burger'),
+      burgerBtnOpen = document.getElementById('burgerOpen'),
+      burgerBtnClose = document.getElementById('burgerClose'),
       background = document.querySelector('.burger-overlay'),
       body = document.getElementById ('body'),
       main = document.getElementById ('main');
+
+      burgerBtnClose.addEventListener('click', () => {
+        body.classList.remove('body--fixed');
+      });
+
+      burgerBtnOpen.addEventListener('click', () => {
+        body.classList.add('body--fixed');
+      });
+
+
 
       burgerBtn.forEach(item => {
         item.addEventListener('click', () => {
           menu.classList.toggle('burger-menu--active');
           background.classList.toggle('burger-overlay--active');
-          body.classList.toggle('body--fixed');
+          
         });
        
       });
+      
+      
 
       background.addEventListener("click", function (e) {
         if (e.target == background ) {
-          background.classList.remove('burger-overlay--active')
+          background.classList.remove('burger-overlay--active');
           menu.classList.remove('burger-menu--active');
           body.classList.remove('body--fixed');
         }   
