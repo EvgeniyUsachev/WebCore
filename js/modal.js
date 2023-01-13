@@ -16,7 +16,7 @@ const phoneBtn = document.querySelectorAll('.menu-button--phone'),
             item.addEventListener("click", function () {
                 modalWindowCall.classList.add('overlay--open');
                 body.classList.add('body--fixed');
-                modalWindowMsg.style.display = 'none';
+                // modalWindowMsg.style.display = 'none';
             });
         });
 
@@ -25,7 +25,7 @@ const phoneBtn = document.querySelectorAll('.menu-button--phone'),
                 modalWindowCall.classList.remove('overlay--open');
                 modalWindowMsg.classList.remove('overlay--open');
                 body.classList.remove('body--fixed');
-                modalWindowMsg.style.display = 'block';
+                // modalWindowMsg.style.display = 'block';
             });
         });
 
@@ -33,7 +33,7 @@ const phoneBtn = document.querySelectorAll('.menu-button--phone'),
             if (e.target == modalWindowCall ) {
                 modalWindowCall.classList.remove('overlay--open');
                 body.classList.remove('body--fixed');
-                modalWindowMsg.style.display = 'block';
+                // modalWindowMsg.style.display = 'block';
             }
         });
 
