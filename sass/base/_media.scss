@@ -61,7 +61,7 @@
     
 }
 
-@media (min-width: 520px) {
+@media (min-width: 768px) {
     .modal {
         width: 440px; 
         border-left: solid 1px $light-green;
@@ -347,6 +347,9 @@
     }
     .footer * {
         flex: 1;
+    }
+    .modal {
+        right: 0; 
     }
 }
 
