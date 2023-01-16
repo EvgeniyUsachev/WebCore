@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"> -->
+    <meta
+  name='viewport'
+  content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'
+/>
+
+
+
     <title>CPS</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">   
@@ -12,9 +19,8 @@
 </head>
 
 <body id="body">
-    <header class="header">
             <div class="container">
-                <div class="menu">
+                <header class="menu">
                     <div class="wrapper">
                         <button id="burgerOpen" class="menu-button burger">
                             <div class="burger__icon">
@@ -50,9 +56,8 @@
                             <img src="icons/menu_search.svg" alt="Статус ремонта">
                         </button>   
                     </div>
-                </div>
+                </header>
             </div>
-    </header>
     <main id="main">
         <div class="burger-overlay">
             <section class="burger-menu">
@@ -82,7 +87,7 @@
                         <li class="burger-menu__item"><a href="#">Наши сервисные центры</a></li>
                         <li class="burger-menu__item"><a href="#">Контакты</a></li>
                     </ul>
-                    <footer class="burger-menu__footer">
+                    <div class="burger-menu__footer">
                         <div class="burger-menu__contacts">
                             <div class="wrapper">
                                 <button id="phone" class="menu-button menu-button--phone">
@@ -105,14 +110,11 @@
                             <a href="#" class="burger-menu__language-item" aria-label="
                             Wechseln Sie zu Deutsch">CH</a>
                         </div>
-                    </footer>
+                    </div>
                 </div>
             </section>
         </div>
-        
-            
     
-        </div>
         <div class="flex-wrapper">
             <section class="services">
                 <div class="container">
@@ -161,13 +163,12 @@
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="services__sign">
                             <img src="img/cps_sign.jpg" alt="CPS sign">
                         </div>
                     </div>
-                </section>
-            
+                </div>  
+            </section>
         
             <section class="brands" id="brands">
                 <div class="container">
@@ -243,12 +244,9 @@
                                 </a>
                             </li>
                         </ul>
-                        
                         <div class="swiper-pagination"></div>
-                        
                     </div>
                     <div class="brands__gradient">
-                        
                     </div>
                     <button class="show-more__button show-more__button--brands hidden-320" type="button">
                         <img class=show-more__arrow src="icons/read_more.svg" alt="arrow_down">
@@ -323,7 +321,6 @@
                         
                     </div>
                     <div class="brands__gradient">
-                        
                     </div>
                     <button class="show-more__button show-more__button--types hidden-320" type="button">
                         <img class=show-more__arrow src="icons/read_more.svg" alt="arrow_down">
@@ -509,11 +506,9 @@
                                     </button>
                                 </div>
                             </li>
-                           
                         </ul>
                         <div class="swiper-pagination"></div>
                     </div>
-                   
                     <div class="brands__gradient">
                     </div>
                     <p class="prices__tax">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
