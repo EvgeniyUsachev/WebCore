@@ -23,14 +23,11 @@
         }
     }
     &--crossed {
-
         span {
             transform: translateY(3px) rotate(-45deg);
             margin:0;
             width: 25px;
             margin: 0 auto;
-
-
             &:nth-child(2) {
                 display: none;
             }

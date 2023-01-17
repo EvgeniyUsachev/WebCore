@@ -1,21 +1,31 @@
-.services, .modal {
+.services {
     padding-top: 24px+88px;
     padding-bottom: 25px;
     background-color: #F8F8F8;  
+
     .container {
         max-width: 1120px;
         margin: 0 auto;
     }
+
     .services-wrapper {
         display: flex;
         align-items: center;
+    }
+
+    h1 {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.6px;
+        margin: 0;
+        color: $main-text-color;
     }
     
     &__header {
         display: flex;
         align-items:center;
-        
     }
+
     &__highlight {
         width: 4px;
         height: 32px;
@@ -24,15 +34,8 @@
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         margin-right: 12px;
-        
     }
-    h1 {
-        font-size: 28px;
-        font-weight: 800;
-        letter-spacing: -0.6px;
-        margin: 0;
-        color: $main-text-color;
-    }
+   
     &__menu {
         display: flex;
         overflow:scroll;
@@ -47,7 +50,7 @@
         }
         a {
             text-decoration: none;
-            color: #7E7E82; 
+            color: $grey; 
             height: 38px;
             display: block;
             &:focus,&:hover,&:active, &:visited, &:target  {
@@ -60,12 +63,12 @@
                         cursor: pointer;
                 }
             }
-            
         }
             &::-webkit-scrollbar {
                 width: 0;
             }
     }
+
     &__menu-item{
         font-weight: 500;
         text-align: center;
@@ -80,7 +83,6 @@
             margin-right: 10px;
             width: 120px;
         }
-        
             
     }
     &__menu-button{
@@ -103,7 +105,6 @@
             margin-right: 3px;
             cursor: pointer;
             }
-       
 
 
     }
@@ -115,6 +116,7 @@
         background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
         border: none;
     }
+
     &__descr {
         font-size: 14px;
         letter-spacing: 0.2px;
@@ -127,8 +129,6 @@
         .visible-320{
             display: block;
         }
-        
-        
     }
 
     &__sign {
@@ -139,8 +139,8 @@
             width:318px;
         }
     }
+
     .hidden-320 {
         display: none;;
     }
-  
 }

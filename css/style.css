@@ -526,21 +526,6 @@ main {
   margin: 16px;
   line-height: 24px;
 }
-.brands .swiper, .brands .swiper-prices, .brands .swiper-big {
-  margin-top: 16px;
-  margin-left: 16px;
-  height: 117px;
-}
-.brands .swiper .swiper-pagination-bullet-active, .brands .swiper-prices .swiper-pagination-bullet-active, .brands .swiper-big .swiper-pagination-bullet-active {
-  background: #B5B6BC;
-  height: 12px;
-  width: 12px;
-}
-.brands .swiper .swiper-pagination-bullet, .brands .swiper-prices .swiper-pagination-bullet, .brands .swiper-big .swiper-pagination-bullet {
-  color: #DDDDDD;
-  height: 12px;
-  width: 12px;
-}
 .brands__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -592,9 +577,6 @@ main {
   top: 87px;
   z-index: 5;
 }
-.brands .swiper-wrapper {
-  padding: 0;
-}
 .brands li {
   list-style: none;
 }
@@ -618,7 +600,7 @@ main {
 .types__button {
   margin-top: 104px;
 }
-.types .swiper, .types .swiper-big {
+.types .swiper {
   height: 205px;
 }
 
@@ -626,11 +608,11 @@ main {
   min-width: 0;
   min-height: 305px;
 }
-.prices .swiper-big {
+.prices .swiper-price {
   height: 250px;
   margin-top: 10px;
 }
-.prices .swiper-big .swiper-pagination {
+.prices .swiper-price .swiper-pagination {
   top: 283px;
 }
 .prices__header, .prices .subheader {
@@ -768,25 +750,6 @@ main {
   font-weight: 500;
 }
 
-.overlay {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.95);
-  position: absolute;
-  top: -100%;
-  z-index: 100;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  visibility: hidden;
-}
-.overlay--open {
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  display: block;
-  visibility: visible;
-}
-
 .modal {
   position: absolute;
   top: 0;
@@ -903,6 +866,44 @@ main {
 .gradient--prices {
   height: 200px;
   top: 77px;
+}
+
+.swiper, .swiper-price {
+  margin-top: 16px;
+  margin-left: 16px;
+  height: 117px;
+}
+.swiper .swiper-pagination-bullet-active, .swiper-price .swiper-pagination-bullet-active {
+  background: #B5B6BC;
+  height: 12px;
+  width: 12px;
+}
+.swiper .swiper-pagination-bullet, .swiper-price .swiper-pagination-bullet {
+  color: #DDDDDD;
+  height: 12px;
+  width: 12px;
+}
+.swiper .swiper-wrapper, .swiper-price .swiper-wrapper {
+  padding: 0;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  top: -100%;
+  z-index: 100;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  visibility: hidden;
+}
+.overlay--open {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  display: block;
+  visibility: visible;
 }
 
 @media (min-width: 359px) {
@@ -1065,18 +1066,18 @@ main {
   .brands {
     min-height: 300px;
   }
-  .brands .swiper, .brands .swiper-big {
+  .brands .swiper, .brands .swiper-price {
     height: auto;
     margin-left: 24px;
   }
-  .brands .swiper .swiper-wrapper, .brands .swiper-big .swiper-wrapper {
+  .brands .swiper .swiper-wrapper, .brands .swiper-price .swiper-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
     height: auto;
     margin-bottom: 0px;
   }
-  .brands .swiper .swiper-wrapper .swiper-slide, .brands .swiper-big .swiper-wrapper .swiper-slide {
+  .brands .swiper .swiper-wrapper .swiper-slide, .brands .swiper-price .swiper-wrapper .swiper-slide {
     margin-bottom: 16px;
   }
   .brands__item {
@@ -1098,10 +1099,10 @@ main {
   .types__item--hidden-768 {
     display: none;
   }
-  .prices .swiper-big {
+  .prices .swiper-price {
     margin-right: 24px;
   }
-  .prices .swiper-big .swiper-wrapper .swiper-slide {
+  .prices .swiper-price .swiper-wrapper .swiper-slide {
     margin-bottom: 0;
   }
   .prices__item {

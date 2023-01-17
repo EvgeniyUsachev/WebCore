@@ -15,11 +15,13 @@
             font-size: 16px;    
         }
     }
+
     &__content {
         display: none;
         overflow: hidden;
         margin-left: 0;
     }
+    
     &__arrow {
         transition: 0.3s;
         &--up {

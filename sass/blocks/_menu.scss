@@ -13,26 +13,30 @@
     background-color: #FFFFFF; 
     z-index: 10;
     width: 100%;
+
     &__logo {
         src: url(/src/icons/logo.png);
     }
+
     &__divider {
         width: 2px;
         height: 32px;
-        background: #EAEAEA;
+        background: $light-grey;
         border-radius: 1px;
         margin-left: 16px;
         margin-right: 20px;
     }
+
     &__item {
-        
         &:nth-child(6n+1) {
         margin-right: 16px;
         }
     }
+
     .visible-320 {
         display: block;
     }
+
     .hidden-320 {
         display: none;
     }

@@ -144,7 +144,7 @@ const menu = document.querySelector('.burger-menu'),
       
       });
 
-      const bigSwiper = new Swiper('.swiper-big', {
+      const bigSwiper = new Swiper('.swiper-price', {
         // Optional parameters
         direction: 'horizontal',
         loop: false,
