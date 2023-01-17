@@ -31,17 +31,29 @@
     }
 
     &__header {
+        display: flex;
+        align-items: center;
         &:nth-child(2) {
             margin-left: -16px;
             margin-bottom: 24px;    
         }
-        p {
+        span {
             font-size: 24px;
             letter-spacing: -0.6px;
             font-weight: 800;
             font-size: 28px;
-            margin: 0;
+            margin-left: 16px;
             color: $main-text-color;
+            display: block; 
+            &::before {
+                content: "";
+                width: 4px;
+                height: 32px;
+                background-color: #41F6D7;
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
         }
     }
 
@@ -53,6 +65,15 @@
         span {
             color:$pink;
         }
+    }
+
+    &__highlight {
+        width: 4px;
+        height: 32px;
+        background-color: #41F6D7;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
     }
    
     input, textarea {
@@ -76,6 +97,7 @@
         margin-bottom: 0px;
         padding-top:10px;
     }
+
 }
 
 

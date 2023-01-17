@@ -91,7 +91,7 @@ main {
           justify-content: space-between;
   min-height: 88px;
   background-color: #FFFFFF;
-  z-index: 10;
+  z-index: 11;
   width: 100%;
 }
 .menu .wrapper {
@@ -126,16 +126,16 @@ main {
   display: none;
 }
 
-.services, .modal {
+.services {
   padding-top: 112px;
   padding-bottom: 25px;
   background-color: #F8F8F8;
 }
-.services .container, .modal .container {
+.services .container {
   max-width: 1120px;
   margin: 0 auto;
 }
-.services .services-wrapper, .modal .services-wrapper {
+.services .services-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +143,14 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-.services__header, .modal__header {
+.services h1 {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  margin: 0;
+  color: #1B1C21;
+}
+.services__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,7 +158,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-.services__highlight, .modal__highlight {
+.services__highlight {
   width: 4px;
   height: 32px;
   background-color: #41F6D7;
@@ -161,14 +168,7 @@ main {
   border-bottom-left-radius: 5px;
   margin-right: 12px;
 }
-.services h1, .modal h1 {
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: -0.6px;
-  margin: 0;
-  color: #1B1C21;
-}
-.services__menu, .modal__menu {
+.services__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,16 +182,16 @@ main {
           align-items: center;
   margin-bottom: 5px;
 }
-.services__menu li, .modal__menu li {
+.services__menu li {
   list-style-type: none;
 }
-.services__menu a, .modal__menu a {
+.services__menu a {
   text-decoration: none;
   color: #7E7E82;
   height: 38px;
   display: block;
 }
-.services__menu a:focus .services__menu-button, .services__menu a:hover .services__menu-button, .services__menu a:active .services__menu-button, .services__menu a:visited .services__menu-button, .services__menu a:target .services__menu-button, .modal__menu a:focus .services__menu-button, .modal__menu a:hover .services__menu-button, .modal__menu a:active .services__menu-button, .modal__menu a:visited .services__menu-button, .modal__menu a:target .services__menu-button {
+.services__menu a:focus .services__menu-button, .services__menu a:hover .services__menu-button, .services__menu a:active .services__menu-button, .services__menu a:visited .services__menu-button, .services__menu a:target .services__menu-button {
   background: #FFFFFF;
   border: solid 2px #B8FFEC;
   border-radius: 6px;
@@ -199,10 +199,10 @@ main {
   margin-right: 3px;
   cursor: pointer;
 }
-.services__menu::-webkit-scrollbar, .modal__menu::-webkit-scrollbar {
+.services__menu::-webkit-scrollbar {
   width: 0;
 }
-.services__menu-item, .modal__menu-item {
+.services__menu-item {
   font-weight: 500;
   text-align: center;
   line-height: 33px;
@@ -214,11 +214,11 @@ main {
   border: none;
   background: inherit;
 }
-.services__menu-item:nth-child(6), .modal__menu-item:nth-child(6) {
+.services__menu-item:nth-child(6) {
   margin-right: 10px;
   width: 120px;
 }
-.services__menu-button, .modal__menu-button {
+.services__menu-button {
   border: none;
   background: inherit;
   letter-spacing: -0.2px;
@@ -231,7 +231,7 @@ main {
   margin-right: 5px;
   display: block;
 }
-.services__menu-button:focus, .services__menu-button:hover, .services__menu-button:active, .services__menu-button:visited, .modal__menu-button:focus, .modal__menu-button:hover, .modal__menu-button:active, .modal__menu-button:visited {
+.services__menu-button:focus, .services__menu-button:hover, .services__menu-button:active, .services__menu-button:visited {
   background: #FFFFFF;
   border: solid 2px #B8FFEC;
   border-radius: 6px;
@@ -239,7 +239,7 @@ main {
   margin-right: 3px;
   cursor: pointer;
 }
-.services__menu-gradient, .modal__menu-gradient {
+.services__menu-gradient {
   position: absolute;
   width: 24px;
   height: 40px;
@@ -248,28 +248,28 @@ main {
   background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
   border: none;
 }
-.services__descr, .modal__descr {
+.services__descr {
   font-size: 14px;
   letter-spacing: 0.2px;
   color: #1B1C21;
   margin: 4px 16px 0 16px;
   font-weight: 400;
 }
-.services__descr .hidden-320, .services__descr .hidden-768, .services__descr .hidden-1120, .modal__descr .hidden-320, .modal__descr .hidden-768, .modal__descr .hidden-1120 {
+.services__descr .hidden-320, .services__descr .hidden-768, .services__descr .hidden-1120 {
   display: none;
 }
-.services__descr .visible-320, .modal__descr .visible-320 {
+.services__descr .visible-320 {
   display: block;
 }
-.services__sign, .modal__sign {
+.services__sign {
   margin-top: 15px;
 }
-.services__sign img, .modal__sign img {
+.services__sign img {
   display: block;
   margin: 0 auto;
   width: 318px;
 }
-.services .hidden-320, .modal .hidden-320 {
+.services .hidden-320 {
   display: none;
 }
 
@@ -331,21 +331,21 @@ main {
 }
 .menu-button--crossed {
   display: block;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
 }
 .menu-button--crossed span {
   display: block;
   position: relative;
-  -webkit-transform: translateY(3px) rotate(-45deg);
-          transform: translateY(3px) rotate(-45deg);
+  -webkit-transform: translateY(0px) rotate(-45deg);
+          transform: translateY(0px) rotate(-45deg);
   background-color: white;
   height: 2px;
   width: 25px;
   margin: 0 auto;
 }
 .menu-button--crossed span:nth-child(2) {
-  -webkit-transform: translateY(1px) rotate(45deg);
-          transform: translateY(1px) rotate(45deg);
+  -webkit-transform: translateY(-2px) rotate(45deg);
+          transform: translateY(-2px) rotate(45deg);
 }
 
 .burger-overlay {
@@ -623,7 +623,6 @@ main {
   height: 200px;
   display: block;
   padding: 16px;
-  width: 260px !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -780,17 +779,36 @@ main {
 .modal__close--440 {
   display: none;
 }
+.modal__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .modal__header:nth-child(2) {
   margin-left: -16px;
   margin-bottom: 24px;
 }
-.modal__header p {
+.modal__header span {
   font-size: 24px;
   letter-spacing: -0.6px;
   font-weight: 800;
   font-size: 28px;
-  margin: 0;
+  margin-left: 16px;
   color: #1B1C21;
+  display: block;
+}
+.modal__header span::before {
+  content: "";
+  width: 4px;
+  height: 32px;
+  background-color: #41F6D7;
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .modal__confidential {
   margin-top: 16px;
@@ -800,6 +818,15 @@ main {
 }
 .modal__confidential span {
   color: #FF3E79;
+}
+.modal__highlight {
+  width: 4px;
+  height: 32px;
+  background-color: #41F6D7;
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .modal input, .modal textarea {
   min-width: 288px;
@@ -955,7 +982,7 @@ main {
     border-left: solid 1px #D9FFF5;
     -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
             box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
-    padding: 40px 32px;
+    padding: 32px 32px;
   }
   .modal__close {
     position: absolute;
@@ -972,13 +999,14 @@ main {
   .modal__highlight {
     height: 40px;
     width: 3px;
-  }
-  .modal__highlight {
     margin-left: -16px;
     margin-right: 30px;
   }
   .modal input, .modal textarea {
     width: 376px;
+  }
+  .modal span {
+    margin-left: 0;
   }
 }
 @media (min-width: 767.98px) {
@@ -1029,6 +1057,15 @@ main {
     height: 66px;
     margin-top: 0;
   }
+  .menu .burger {
+    margin-right: 0;
+  }
+  .menu .visible-768 {
+    display: block;
+  }
+  .menu .hidden-768 {
+    display: none;
+  }
   .menu__divider {
     margin-left: 20px;
   }
@@ -1044,15 +1081,6 @@ main {
   .menu__logo {
     display: block;
     margin-right: 240px;
-  }
-  .menu .burger {
-    margin-right: 0;
-  }
-  .menu .visible-768 {
-    display: block;
-  }
-  .menu .hidden-768 {
-    display: none;
   }
   .show-more {
     margin-top: -7px;
@@ -1080,21 +1108,18 @@ main {
   .brands .swiper .swiper-wrapper .swiper-slide, .brands .swiper-price .swiper-wrapper .swiper-slide {
     margin-bottom: 16px;
   }
-  .brands__item {
-    width: 224px;
-  }
   .brands .show-more__button {
     display: block;
     margin-left: 32px;
+  }
+  .brands__item {
+    width: 224px;
   }
   .brands__item--hidden-768 {
     display: none;
   }
   .brands__header, .brands .subheader {
     height: 56px;
-  }
-  .brands__gradient {
-    display: none;
   }
   .types__item--hidden-768 {
     display: none;
@@ -1266,6 +1291,9 @@ main {
   .services .visible-1120 {
     display: block;
   }
+  .services .services__highlight {
+    margin-right: 30px;
+  }
   .services__menu {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1285,9 +1313,6 @@ main {
   .services__descr {
     margin: 10px 48px 0 23px;
     line-height: 20px;
-  }
-  .services .services__highlight {
-    margin-right: 30px;
   }
   .services__header {
     -webkit-box-pack: start;
@@ -1404,15 +1429,15 @@ main {
   .burger-menu .menu__logo {
     margin-right: 60px;
   }
+  .burger-menu .wrapper:first-child {
+    width: auto;
+  }
   .burger-menu__item {
     margin-top: 0;
     margin-bottom: 32px;
   }
   .burger-menu__item:last-child {
     margin-bottom: 268px;
-  }
-  .burger-menu .wrapper:first-child {
-    width: auto;
   }
   main {
     display: -webkit-box;
@@ -1475,16 +1500,16 @@ main {
   .services {
     padding-top: 42px;
   }
-  .services__header {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .services .visible-1440 {
     display: block;
   }
   .services .container {
     max-width: 1120px;
+  }
+  .services__header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .show-more__button {
     margin-top: 10px;
