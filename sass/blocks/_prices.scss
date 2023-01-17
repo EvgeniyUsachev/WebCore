@@ -1,10 +1,13 @@
 .prices {
     min-width: 0;  
     min-height: 305px;
-    .swiper {
+    .swiper-big {
         height: 250px;
-        margin-right: 24px;
+        // margin-right: 24px;
         margin-top: 10px;
+        .swiper-pagination {
+            top: 283px; 
+        }
        
     }
     

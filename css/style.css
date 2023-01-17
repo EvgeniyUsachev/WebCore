@@ -526,17 +526,17 @@ main {
   margin: 16px;
   line-height: 24px;
 }
-.brands .swiper, .brands .swiper-prices {
+.brands .swiper, .brands .swiper-prices, .brands .swiper-big {
   margin-top: 16px;
   margin-left: 16px;
   height: 117px;
 }
-.brands .swiper .swiper-pagination-bullet-active, .brands .swiper-prices .swiper-pagination-bullet-active {
+.brands .swiper .swiper-pagination-bullet-active, .brands .swiper-prices .swiper-pagination-bullet-active, .brands .swiper-big .swiper-pagination-bullet-active {
   background: #B5B6BC;
   height: 12px;
   width: 12px;
 }
-.brands .swiper .swiper-pagination-bullet, .brands .swiper-prices .swiper-pagination-bullet {
+.brands .swiper .swiper-pagination-bullet, .brands .swiper-prices .swiper-pagination-bullet, .brands .swiper-big .swiper-pagination-bullet {
   color: #DDDDDD;
   height: 12px;
   width: 12px;
@@ -589,7 +589,7 @@ main {
   background: -webkit-gradient(linear, right top, left top, color-stop(16.84%, #F8F8F8), to(rgba(248, 248, 248, 0.0001)));
   background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
   border: none;
-  top: 684px;
+  top: 87px;
   z-index: 5;
 }
 .brands .swiper-wrapper {
@@ -618,7 +618,7 @@ main {
 .types__button {
   margin-top: 104px;
 }
-.types .swiper {
+.types .swiper, .types .swiper-big {
   height: 205px;
 }
 
@@ -626,10 +626,12 @@ main {
   min-width: 0;
   min-height: 305px;
 }
-.prices .swiper {
+.prices .swiper-big {
   height: 250px;
-  margin-right: 24px;
   margin-top: 10px;
+}
+.prices .swiper-big .swiper-pagination {
+  top: 283px;
 }
 .prices__header, .prices .subheader {
   height: 56px;
@@ -881,6 +883,28 @@ main {
   padding-top: 10px;
 }
 
+.gradient {
+  position: absolute;
+  width: 24px;
+  height: 81px;
+  right: 0;
+  background: -webkit-gradient(linear, right top, left top, color-stop(16.84%, #F8F8F8), to(rgba(248, 248, 248, 0.0001)));
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  border: none;
+  z-index: 5;
+}
+.gradient--brands {
+  top: 87px;
+}
+.gradient--types {
+  height: 180px;
+  top: 87px;
+}
+.gradient--prices {
+  height: 200px;
+  top: 77px;
+}
+
 @media (min-width: 359px) {
   .burger-menu__item a:focus:before, .burger-menu__item a:hover:before {
     content: "";
@@ -898,16 +922,10 @@ main {
   .menu {
     padding: 18px 24px 18px 16px;
   }
-  .brands__gradient {
-    top: 661px;
-  }
 }
 @media (min-width: 375px) {
   .brands {
     min-height: 200px;
-  }
-  .brands__gradient {
-    top: 661px;
   }
   .brands__header, .brands .subheader {
     height: 56px;
@@ -917,6 +935,12 @@ main {
   }
   .types {
     min-height: 287px;
+  }
+  .gradient--brands {
+    top: 70px;
+  }
+  .gradient--types {
+    top: 69px;
   }
 }
 @media (min-width: 424px) {
@@ -1041,18 +1065,18 @@ main {
   .brands {
     min-height: 300px;
   }
-  .brands .swiper {
+  .brands .swiper, .brands .swiper-big {
     height: auto;
     margin-left: 24px;
   }
-  .brands .swiper .swiper-wrapper {
+  .brands .swiper .swiper-wrapper, .brands .swiper-big .swiper-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
     height: auto;
     margin-bottom: 0px;
   }
-  .brands .swiper .swiper-wrapper .swiper-slide {
+  .brands .swiper .swiper-wrapper .swiper-slide, .brands .swiper-big .swiper-wrapper .swiper-slide {
     margin-bottom: 16px;
   }
   .brands__item {
@@ -1068,13 +1092,16 @@ main {
   .brands__header, .brands .subheader {
     height: 56px;
   }
+  .brands__gradient {
+    display: none;
+  }
   .types__item--hidden-768 {
     display: none;
   }
-  .prices .swiper {
+  .prices .swiper-big {
     margin-right: 24px;
   }
-  .prices .swiper .swiper-wrapper .swiper-slide {
+  .prices .swiper-big .swiper-wrapper .swiper-slide {
     margin-bottom: 0;
   }
   .prices__item {

@@ -144,6 +144,30 @@ const menu = document.querySelector('.burger-menu'),
       
       });
 
+      const bigSwiper = new Swiper('.swiper-big', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        spaceBetween: 16,
+        breakpoints: {
+          768: {
+            enabled: false,
+            width: 224, 
+            spaceBetween: 24,
+          },
+        },
+        width: 260, 
+        
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+      
+      
+      });
+
      
 
 });
