@@ -149,8 +149,3 @@ const menu = document.querySelector('.burger-menu'),
      
 
 });
-let newArr = [1, 2]
-function hello () {
-  return 'hello'
-};
-console.log( hello() + '2');

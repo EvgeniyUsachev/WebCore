@@ -919,6 +919,7 @@ main {
   -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: hidden;
+  top: 0;
 }
 .overlay--open {
   position: fixed;
