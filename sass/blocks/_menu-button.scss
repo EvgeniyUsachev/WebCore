@@ -9,7 +9,7 @@
     cursor: pointer;
     border:none; 
     transition: all 0.5s;
-    &:hover, :focus {
+    &:hover, &:focus {
         box-shadow: 0 0 20px 5px $pink;
         background-color: #41F6D7; 
     }

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/fonts.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">        
+   
 </head>
 
 <body id="body">
@@ -77,7 +78,7 @@
                         </button>
                     </div>
                     <ul class="burger-menu__main">
-                        <li class="burger-menu__item"><a href="#">Ремонт техники</a> </li>
+                        <li class="burger-menu__item" ><a href="#">Ремонт техники</a> </li>
                         <li class="burger-menu__item"><a href="#">Услуги и сервисы</a></li>
                         <li class="burger-menu__item"><a href="#">Корпоративным клиентам</a></li>
                         <li class="burger-menu__item"><a href="#">Продавцам техники</a></li>
@@ -117,7 +118,7 @@
         <div class="flex-wrapper">
             <section class="services">
                 <div class="container">
-                    <div class="services__header modal__header">
+                    <div class="services__header">
                         <div class="services__highlight"></div>
                         <h1>Услуги и сервисы</h1>
                         <div class="services-wrapper">
@@ -135,7 +136,7 @@
                     </div>
                     <nav>
                         <ul class="services__menu">
-                            <li class="services__menu-item"><a href="#brands"><button class="services__menu-button">Ремонтируемые бренды</button></a></li> 
+                            <li class="services__menu-item" ><a href="#brands" ><button class="services__menu-button " id="focused">Ремонтируемые бренды</button></a></li> 
                             <li class="services__menu-item"><a href="#types"><button class="services__menu-button"> Ремонтируемые устройств</button></a></li> 
                             <li class="services__menu-item"><a href="#prices"><button class="services__menu-button">Цены на услуги</button></a></li> 
                             <li class="services__menu-item"><a href="#"><button class="services__menu-button">Адреса сервисных центров</button></a></li> 
@@ -336,7 +337,7 @@
                     <div class="brands__header prices__header subheader">
                         <h2>Цены на услуги</h2>
                     </div>
-                    <div class="swiper-price">
+                    <div class="swiper">
                         <ul class="swiper-wrapper">
                             <li class="swiper-slide brands__item prices__item prices__item--header ">
                                 <div class="prices__block">
@@ -610,7 +611,9 @@
 
 </body>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="js/bigSwiper.js"></script>
         <script type="text/javascript" src="js/modal.js"></script>
+        <script type="text/javascript" src="js/focus.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/types.js"></script>
 </html>
